@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoginModel } from '../TSModel/login-model.model';
-
 
 @Component({
   selector: 'app-login',
@@ -12,7 +10,6 @@ import { LoginModel } from '../TSModel/login-model.model';
 export class LoginComponent implements OnInit {
 
   loginForms: FormGroup;
-  TModel: LoginModel;
   constructor( private route: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
